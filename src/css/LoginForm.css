@@ -1,0 +1,122 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.main-div1 {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 30px;
+}
+
+.content1 {
+    max-width: 360px;
+    background-color: skyblue;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    /* border-radius: 5px; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.button1 {
+    width: 300px;
+}
+
+.content1 form .user-details-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details-1 .input-box1 {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box1 span.details1 {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.user-details-1 .input-box1 input {
+    height: 45px;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details1 .input-box1 input:focus,
+.user-details1 .input-box1 input:valid {
+    border-color: #9b59b6;
+}
+
+form .button1 {
+    height: 45px;
+    margin: 35px 0
+}
+
+form .button1 input {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+form .button1 input:hover {
+    /* transform: scale(0.99); */
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+@media(max-width: 584px) {
+    .content1 {
+        max-width: 100%;
+    }
+
+    form .user-details1 .input-box1 {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .content form .user-details1 {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details1::-webkit-scrollbar {
+        width: 5px;
+    }
+    .main-div1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 459px) {
+    .content1 {
+        flex-direction: column;
+    }
+}
